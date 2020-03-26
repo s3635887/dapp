@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using DattingApp.api.Models;
 using DattingApp.API.Models;
 
 namespace DattingApp.API.Data
@@ -9,5 +10,7 @@ namespace DattingApp.API.Data
 
 
         public DbSet<Value> Values { get; set; }
+
+        public DbSet<User> User { get; set; }
     }
 }
